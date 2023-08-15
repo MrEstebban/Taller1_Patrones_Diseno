@@ -1,0 +1,11 @@
+
+#MYSQL
+docker exec -it mysql-db mysql -p
+--secret
+use taller_factory_method;
+select * from articulos;
+
+#POSTGRES
+docker exec -it postgres-db psql -U postgres
+\c factory_method
+SELECT * FROM articulos;
